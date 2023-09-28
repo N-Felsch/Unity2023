@@ -1,21 +1,15 @@
-
 using UnityEngine;
+using System.Collections;
 
-public class BasicSyntax : MonoBehaviour
+public class ForLoop : MonoBehaviour
+{ 
+    int numEnemies = 3;
 
-{
     void Start()
     {
-        //this line is there to tell me the x position of my object
-        
-        /* Hi there!
-         * this is two lines
-         * */
-        Debug.Log(Transform.position.x);
-
-        if (Transform.position.y <= 5f)
+        for (int i = 0; i < numEnemies; i++)
         {
-            Debug.Log(message: "I'm about to hit the ground!");
+            Debug.Log("Creating enemy number: " + i);
         }
     }
 }
