@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        // Grabs the horizontal and vertical axis
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         moveDirection = new
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
         }
        
         // Apply gravity to moveDirection
-        moveDirection.y -= gravity * Time.deltaTime;
+       // moveDirection.y -= gravity * Time.deltaTime;
        
         // Move the character controller
         controller.Move(moveDirection * Time.deltaTime);
