@@ -6,9 +6,11 @@ using UnityEngine;
 public class DestroyOutOfBounds : MonoBehaviour
 {
 
+    // Called on multiple items
+    
     public float topBounds = 30.0f;
 
-    public float lowerBounds = -10.0f;
+    public float lowerBounds = -20.0f;
 
 
     void Awake()
