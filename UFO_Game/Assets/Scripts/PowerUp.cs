@@ -24,6 +24,8 @@ public class NewPowerUp : MonoBehaviour
         }
     }
 
+    
+
     // How quickly does the Powerup move down the screen.
     public float powerupSpeed = 5.0f;
     void Update()
