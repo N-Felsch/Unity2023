@@ -8,6 +8,7 @@ using Object = UnityEngine.Object;
 public class NewPowerUp : MonoBehaviour
 {
     
+    
     // If touching player, pickup item, print to console, and destroy game object
     public void OnTriggerEnter(Collider other)
     {

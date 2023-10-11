@@ -14,20 +14,14 @@ public class PowerupSpawnManager : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("SpawnRandomUFO", startDelay, spawnInterval);
+        InvokeRepeating("SpawnRandomPowerup", startDelay, spawnInterval);
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     void SpawnRandomPowerup()
     {
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPositionZ); //
-        // int powerupIndex = Random.Range(0, powerupPrefabs.Length); // Picks a random power-up from the array
-        Instantiate(powerupPrefabs[], spawnPos, powerupPrefabs[].transform.rotation); // Spawns indexed power-up from the array at a random location on the X-Axis
+        int powerupIndex = Random.Range(0, powerupPrefabs.Length); // Picks a random power-up from the array
+        Instantiate(powerupPrefabs[powerupIndex], spawnPos, powerupPrefabs[powerupIndex].transform.rotation); // Spawns indexed power-up from the array at a random location on the X-Axis
     }
 }
