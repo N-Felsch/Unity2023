@@ -1,17 +1,27 @@
 using System.Globalization;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
+
+[RequireComponent(typeof(TMP_Text))]
 public class NewBehaviourScript : MonoBehaviour
 {
-  public Text label;
+  public TMP_Text label;
   public FloatData dataObj;
 
-  private void Start()
+  public void Start()
   {
-      label = GetComponent<Text>();
+      
+      label = GetComponent<TMP_Text>();
+      UpdateLabel();
+  }
+  
+  public void UpdateLabel()
+  {
       label.text = dataObj.value.ToString(CultureInfo.InvariantCulture);
 
   }
 }
+
+
+
