@@ -36,4 +36,10 @@ public class DraggableBehaviour : MonoBehaviour
         draggable = false;
         endDragEvent.Invoke();
     }
+
+    public void TurnDragOff()
+    {
+        draggable = false;
+    }
 }
+
