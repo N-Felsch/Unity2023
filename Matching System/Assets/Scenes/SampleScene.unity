@@ -1403,6 +1403,7 @@ GameObject:
   - component: {fileID: 655311482}
   - component: {fileID: 655311481}
   - component: {fileID: 655311483}
+  - component: {fileID: 655311484}
   m_Layer: 5
   m_Name: ScoreNum
   m_TagString: Untagged
@@ -1560,6 +1561,34 @@ MonoBehaviour:
   noMatchDelayedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &655311484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655311479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6713fd25a9e484a0ab5702743f37b0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: a6134603489d640c9bb2b913cb5b1a88, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 655311479}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &670005713
 GameObject:
   m_ObjectHideFlags: 0
